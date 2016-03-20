@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A calendar of tango milongas and practicas in Montreal">
-    <!-- <meta name="author" content=""> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <title>Tango Calendar Montreal</title>
 
@@ -15,7 +15,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/tangocalmontreal.css" rel="stylesheet">
     <style>
     body {
         padding-top: 70px;
@@ -45,27 +44,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">tangocalmontreal</a>
+                <a class="navbar-brand" href="index.html">tangocalmontreal</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Calendar</a>
+                        <a href="index.html">Calendar</a>
                     </li>
                     <li>
-                        <a href="schools.html">Tango Schools</a>
+                        <a href="#">Tango Schools</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html#contact">Contact</a>
+                        <a href="#">Contact</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="fr/index.html">Francais</a>
+                        <a href="fr/about.html">Francais</a>
                     </li>
                 </ul>
             </div>
@@ -79,14 +78,46 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Milongas and Practicas around Montreal</h2>
-                <p class="lead">Last update February 2016</p>
-                <div class="hidden-xs responsive-iframe-container">
-                    <iframe frameborder="0" height="650" scrolling="no" src="https://www.google.com/calendar/embed?title=Tango%20Montreal&amp;showTitle=0&amp;showPrint=0&amp;mode=WEEK&amp;height=1124&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=crbktu64scdq431hpfj3l8la6c%40group.calendar.google.com&amp;color=%232F6309&amp;src=re3i4ivvapgtusnj1e0ern28jo%40group.calendar.google.com&amp;color=%23B1365F&amp;src=56dji6s68ca5s720qk6vbgj49s%40group.calendar.google.com&amp;color=%232952A3&amp;src=fl3okgom5v3jac5brvektlsl3o%40group.calendar.google.com&amp;color=%23AB8B00&amp;src=fib6sgmn27rbb8ponjlish3ct4%40group.calendar.google.com&amp;color=%236B3304&amp;src=p%23weather%40group.v.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FToronto" style="border-width: 0;" width="100%"></iframe>
-                </div>
-                <div class="visible-xs">
-                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=crbktu64scdq431hpfj3l8la6c%40group.calendar.google.com&amp;color=%23FFFFFF&amp;src=re3i4ivvapgtusnj1e0ern28jo%40group.calendar.google.com&amp;color=%23B1365F&amp;src=56dji6s68ca5s720qk6vbgj49s%40group.calendar.google.com&amp;color=%232952A3&amp;src=fib6sgmn27rbb8ponjlish3ct4%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=America%2FMontreal" style="border-width:0; max-width: 600px" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-                </div>
+                <legend>About</legend>
+                <p class="col-lg-6 col-lg-offset-3">Tango Calendar Montreal is a website maintained by Edmund Lam that lists the weekly tango events (Milongas and Practicas) around Montreal.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <section id="contact">
+                <form id="contact-form" class="form-horizontal" action="placeholder" method="POST">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend>Contact Me</legend>
+                        <p>Missing something on the calendar? Let me know!</p>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textinput">Email</label>  
+                          <div class="col-md-4">
+                          <input id="textinput" name="_replyto" type="email" placeholder="Enter your email here" class="form-control input-md">
+                          </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textarea">Message</label>
+                          <div class="col-md-4">                     
+                            <textarea class="form-control" id="textarea" name="textarea" placeholder="Enter your message here"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textarea"></label>
+                          <div class="col-md-4">                     
+                            <input type="submit" value="Send">
+                          </div>
+                        </div>
+                    </fieldset>
+                </form>
+                </section>
                 </br>
                 <p class="copyright text-muted">The night is young. Tango Calendar Montreal </br> Copyright &copy; tangocalmontreal 2016</p>
             </div>
@@ -101,6 +132,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var base64_email = 'bGFzdGx5QGdtYWlsLmNvbQ==';
+            var base_url = 'http://formspree.io/';
+            var action = base_url + atob(base64_email);
+            $('#contact-form').attr('action', action);
+        });
+    </script>
 
 </body>
 

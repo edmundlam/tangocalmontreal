@@ -6,15 +6,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A calendar of tango milongas and practicas in Montreal">
+    <!-- <meta name="author" content=""> -->
 
-    <title>Tango Calendar Montreal</title>
+    <title>Tango Calendar Montreal - About</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link href="css/tangocalmontreal.css" rel="stylesheet">
     <style>
     body {
         padding-top: 70px;
@@ -58,13 +59,13 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="about.html#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Francais</a>
+                        <a href="fr/schools.html">Francais</a>
                     </li>
                 </ul>
             </div>
@@ -78,41 +79,10 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <form id="contact-form" class="form-horizontal" action="placeholder" method="POST">
-                    <fieldset>
-                        <!-- Form Name -->
-                        <legend>Contact Me</legend>
-                        <p>Missing something on the calendar? Let me know!</p>
-
-                        <!-- Text input-->
-                        <div class="form-group">
-                          <label class="col-md-4 control-label" for="textinput">Email</label>  
-                          <div class="col-md-4">
-                          <input id="textinput" name="_replyto" type="email" placeholder="Enter your email here" class="form-control input-md">
-                          </div>
-                        </div>
-
-                        <!-- Textarea -->
-                        <div class="form-group">
-                          <label class="col-md-4 control-label" for="textarea">Message</label>
-                          <div class="col-md-4">                     
-                            <textarea class="form-control" id="textarea" name="textarea" placeholder="Enter your message here"></textarea>
-                          </div>
-                        </div>
-
-                        <div class="form-group">
-                          <label class="col-md-4 control-label" for="textarea"></label>
-                          <div class="col-md-4">                     
-                            <input type="submit" value="Send">
-                          </div>
-                        </div>
-                    </fieldset>
-                </form>
-
-
-                <ul class="list-unstyled">
-                    <li></li>
-                </ul>
+                <h2>Milongas and Practicas around Montreal</h2>
+                <p class="lead">Last update February 2016</p>
+                    <iframe frameborder="0" height="300" src="https://docs.google.com/spreadsheet/pub?key=0Avm2eiuaSW-NdHpPMzh3ZEpJbWRWbkRTRlExaFkwaEE&amp;=true&amp;gid=0&amp;range=A1%3AE13&amp;output=html&amp;widget=true" style="max-width:1000px" width="100%"></iframe>
+                </br>
                 <p class="copyright text-muted">The night is young. Tango Calendar Montreal </br> Copyright &copy; tangocalmontreal 2016</p>
             </div>
         </div>
@@ -126,15 +96,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var base64_email = 'bGFzdGx5QGdtYWlsLmNvbQ==';
-            var base_url = 'http://formspree.io/';
-            var action = base_url + atob(base64_email);
-            $('#contact-form').attr('action', action);
-        });
-    </script>
 
 </body>
 
