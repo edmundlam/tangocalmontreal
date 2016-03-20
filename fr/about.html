@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="À propos de Tangocalmontreal.">
+
+    <title>Tango Calendrier Montréal - À propos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">tangocalmontreal</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Calendrier</a>
+                    </li>
+                    <li>
+                        <a href="schools.html">Écoles de Tango</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">À propos</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">English</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <legend>À propos</legend>
+                <p class="col-lg-6 col-lg-offset-3">Tango Calendrier Montréal affiche les événements de tango hebdomadaires (Milongas et practicas) autour de Montréal. Le site est maintenu par <a href="http://edmundlam.github.io">Edmund Lam</a>.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <section id="contact">
+                <form id="contact-form" class="form-horizontal" action="placeholder" method="POST">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend>Contact</legend>
+                        <p>Les suggestions et corrections sont bienvenues!</p>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textinput">Email</label>  
+                          <div class="col-md-4">
+                          <input id="textinput" name="_replyto" type="email" placeholder="Enter your email here" class="form-control input-md">
+                          </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textarea">Message</label>
+                          <div class="col-md-4">                     
+                            <textarea class="form-control" id="textarea" name="textarea" placeholder="Enter your message here"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textarea"></label>
+                          <div class="col-md-4">                     
+                            <input type="submit" value="Envoyer">
+                          </div>
+                        </div>
+                    </fieldset>
+                </form>
+                </section>
+                </br>
+                <p class="copyright text-muted">La soirée est jeune. Tango Calendar Montreal </br> Copyright &copy; tangocalmontreal 2016</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var base64_email = 'bGFzdGx5QGdtYWlsLmNvbQ==';
+            var base_url = 'http://formspree.io/';
+            var action = base_url + atob(base64_email);
+            $('#contact-form').attr('action', action);
+        });
+    </script>
+
+</body>
+
+</html>
