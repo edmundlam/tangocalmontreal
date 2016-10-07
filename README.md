@@ -1,2 +1,4 @@
 # tangocalmontreal
-A simple calendar of weekly tango events in Montreal
+A simple calendar of weekly tango events in Montreal.
+
+[tangocalmontreal.ca](http://tangocalmontreal.ca)
