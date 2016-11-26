@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+      <loc>http://www.tangocalmontreal.ca/</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://www.tangocalmontreal.ca/"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://www.tangocalmontreal.ca/fr/"/>
+      <lastmod>2016-03-23T02:10:44+00:00</lastmod>
+    </url>
+    <url>
+      <loc>http://www.tangocalmontreal.ca/index.html</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://www.tangocalmontreal.ca/index.html"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://www.tangocalmontreal.ca/fr/index.html"/>
+      <lastmod>2016-03-23T02:10:44+00:00</lastmod>
+    </url>
+    <url>
+      <loc>http://www.tangocalmontreal.ca/schools.html</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://www.tangocalmontreal.ca/schools.html"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://www.tangocalmontreal.ca/fr/schools.html"/>
+      <lastmod>2016-03-23T02:10:44+00:00</lastmod>
+    </url>
+    <url>
+      <loc>http://www.tangocalmontreal.ca/about.html</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://www.tangocalmontreal.ca/about.html"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://www.tangocalmontreal.ca/fr/about.html"/>
+      <lastmod>2016-03-23T02:10:44+00:00</lastmod>
+    </url>
+    <url>
+      <loc>http://www.tangocalmontreal.ca/fr/index.html</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://www.tangocalmontreal.ca/index.html"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://www.tangocalmontreal.ca/fr/index.html"/>
+      <lastmod>2016-03-23T02:10:44+00:00</lastmod>
+    </url>
+    <url>
+      <loc>http://www.tangocalmontreal.ca/fr/schools.html</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://www.tangocalmontreal.ca/schools.html"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://www.tangocalmontreal.ca/fr/schools.html"/>
+      <lastmod>2016-03-23T02:10:44+00:00</lastmod>
+    </url>
+    <url>
+      <loc>http://www.tangocalmontreal.ca/fr/about.html</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://www.tangocalmontreal.ca/about.html"/>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://www.tangocalmontreal.ca/fr/about.html"/>
+      <lastmod>2016-03-23T02:10:44+00:00</lastmod>
+    </url>
+</urlset>
