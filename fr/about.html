@@ -117,7 +117,7 @@
                         <div class="form-group">
                           <label class="col-md-4 control-label" for="textarea">Message</label>
                           <div class="col-md-4">                     
-                            <textarea class="form-control" id="textarea" name="textarea" placeholder="Enter your message here"></textarea>
+                            <textarea class="form-control" id="textarea" name="message" placeholder="Enter your message here"></textarea>
                           </div>
                         </div>
 
@@ -131,7 +131,7 @@
                 </form>
                 </section>
                 </br>
-                <p class="copyright text-muted">La soirée est jeune. Tango Calendar Montreal </br> Copyright &copy; tangocalmontreal 2017</p>
+                <p class="copyright text-muted">La soirée est jeune. Tango Calendar Montreal </br> Copyright &copy; tangocalmontreal 2022</p>
             </div>
         </div>
         <!-- /.row -->
@@ -147,9 +147,9 @@
 
     <script>
         $(document).ready(function() {
-            var base64_email = 'bGFzdGx5QGdtYWlsLmNvbQ==';
-            var base_url = 'http://formspree.io/';
-            var action = base_url + atob(base64_email);
+            var base64_id = "eG9xcnpxcXE=";
+            var base_url = 'http://formspree.io/f/';
+            var action = base_url + atob(base64_id);
             $('#contact-form').attr('action', action);
         });
     </script>
