@@ -125,7 +125,7 @@
                         <div class="form-group">
                           <label class="col-md-4 control-label" for="textarea"></label>
                           <div class="col-md-4">                     
-                            <input class="btn btn-default" type="submit" value="Send">
+                            <button class="btn btn-default" type="submit">Send</button>
                           </div>
                         </div>
                     </fieldset>
@@ -150,7 +150,7 @@
     <script>
         $(document).ready(function() {
             var base64_id = "eG9xcnpxcXE=";
-            var base_url = 'http://formspree.io/f/';
+            var base_url = 'https://formspree.io/f/';
             var action = base_url + atob(base64_id);
             $('#contact-form').attr('action', action);
         });
