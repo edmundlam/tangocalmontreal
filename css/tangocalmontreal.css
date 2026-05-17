@@ -1,12 +1,37 @@
-/* Custom Template */
-body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-        /*font-family: Helvetica Neue,Helvetica,Arial,sans-serif;*/
-        font-family: 'Alegreya Sans', sans-serif;
-        font-size: 18px;
-    }
+/* ========================================
+   Tango Calendar Montreal
+   "Milonga at Midnight" Theme
+   Mobile-first, tango-inspired design
+   ======================================== */
 
+/* --- CSS Custom Properties --- */
+:root {
+    /* Palette: warm burgundy, cream, charcoal, gold */
+    --color-primary: #8B1A2A;
+    --color-primary-dark: #6B1220;
+    --color-primary-light: #A6283A;
+    --color-secondary: #D4A574;
+    --color-bg: #FAF7F2;
+    --color-text: #2C2420;
+    --color-text-muted: #6B5F58;
+    --color-white: #FFFFFF;
+}
+
+/* --- Base --- */
+body {
+    padding-top: 60px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Original Typography Sizes --- */
 .btn {
     font-size: 18px;
 }
@@ -19,22 +44,195 @@ legend {
     font-size: 25px;
 }
 
-/* Responsive iFrame */
+h2 {
+    line-height: 1.2;
+    color: var(--color-text);
+}
 
+/* --- Navbar --- */
+.navbar {
+    border: none;
+    box-shadow: 0 2px 8px rgba(44, 36, 32, 0.15);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+}
+
+.navbar-brand {
+    color: var(--color-white) !important;
+}
+
+/* Nav links */
+.navbar .nav > li > a {
+    color: rgba(255, 255, 255, 0.85);
+    transition: color 0.2s ease;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+    color: var(--color-white);
+    background-color: transparent;
+}
+
+.navbar .nav > li > a[aria-current="page"] {
+    color: var(--color-white);
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: var(--color-primary-dark);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar .nav > li > a {
+        padding: 12px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+}
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+    margin: -1rem -1rem 1.5rem;
+    border-radius: 0 0 8px 8px;
+}
+
+.hero h2 {
+    color: var(--color-white);
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+        margin: -1.5rem -1rem 2rem;
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+/* --- Main Content --- */
+main {
+    min-height: 60vh;
+}
+
+.calendar-section {
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .calendar-section {
+        padding: 1.5rem;
+    }
+}
+
+/* --- Buttons --- */
+.btn {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-default {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+}
+
+/* --- Forms --- */
+.form-control {
+    border: 2px solid #E0D8CF;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(139, 26, 42, 0.15);
+    outline: none;
+}
+
+/* --- Responsive iFrame --- */
 .responsive-iframe-container {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(44, 36, 32, 0.15);
+    background-color: var(--color-white);
 }
 
 .responsive-iframe-container iframe,
-.vresponsive-iframe-container object,
-.vresponsive-iframe-container embed {
+.responsive-iframe-container object,
+.responsive-iframe-container embed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 6px;
+}
+
+.visible-xs iframe {
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(44, 36, 32, 0.15);
+}
+
+/* --- Links --- */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--color-primary-light);
+}
+
+/* --- Footer --- */
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(44, 36, 32, 0.1);
+}
+
+.footer-tagline {
+    color: #9A8A82;
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    color: #9A8A82;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.lead {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+/* --- Skip Link --- */
+a.sr-only-focusable:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 6px;
+    font-weight: 600;
+    z-index: 9999;
 }
