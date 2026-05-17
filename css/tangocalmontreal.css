@@ -2,6 +2,7 @@
    Tango Calendar Montreal
    "Milonga at Midnight" Theme
    Mobile-first, tango-inspired design
+   Bootstrap 5.3 compatible
    ======================================== */
 
 /* --- CSS Custom Properties --- */
@@ -19,12 +20,21 @@
 
 /* --- Base --- */
 body {
-    padding-top: 60px;
+    padding-top: 76px;
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 18px;
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-bg);
+}
+
+/* --- Navbar fixed positioning --- */
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 html {
@@ -53,6 +63,9 @@ h2 {
 .navbar {
     border: none;
     box-shadow: 0 2px 8px rgba(44, 36, 32, 0.15);
+}
+
+.navbar.bg-custom {
     background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
 }
 
@@ -61,31 +74,43 @@ h2 {
 }
 
 /* Nav links */
-.navbar .nav > li > a {
+.navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.85);
     transition: color 0.2s ease;
 }
 
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus {
-    color: var(--color-white);
-    background-color: transparent;
-}
-
-.navbar .nav > li > a[aria-current="page"] {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
     color: var(--color-white);
 }
 
-@media (max-width: 767px) {
+.navbar-nav .nav-link[aria-current="page"] {
+    color: var(--color-white);
+}
+
+@media (max-width: 991px) {
     .navbar-collapse {
         background-color: var(--color-primary-dark);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 0;
     }
 
-    .navbar .nav > li > a {
+    .navbar-nav .nav-link {
         padding: 12px 15px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
+}
+
+/* --- Navbar Toggler --- */
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+/* --- Navbar Toggler Icon Custom Color --- */
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* --- Hero Section --- */
@@ -133,13 +158,13 @@ main {
     border: none;
 }
 
-.btn-default {
+.btn-secondary {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
 
-.btn-default:hover,
-.btn-default:focus {
+.btn-secondary:hover,
+.btn-secondary:focus {
     background-color: var(--color-primary-light);
     color: var(--color-white);
 }
@@ -179,7 +204,7 @@ main {
     border-radius: 6px;
 }
 
-.visible-xs iframe {
+.d-block.d-md-none iframe {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(44, 36, 32, 0.15);
 }
@@ -220,8 +245,21 @@ a:focus {
     margin-bottom: 1.5rem;
 }
 
-/* --- Skip Link --- */
-a.sr-only-focusable:focus {
+/* --- Skip Link (Bootstrap 5: visually-hidden-focusable) --- */
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.visually-hidden-focusable:focus,
+.visually-hidden-focusable:focus-within {
     position: static !important;
     width: auto !important;
     height: auto !important;
